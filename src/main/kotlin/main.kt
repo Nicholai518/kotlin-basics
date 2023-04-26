@@ -1,3 +1,4 @@
+import java.util.Scanner;
 fun main(){
 
     /*
@@ -105,4 +106,47 @@ fun main(){
     println(scientificNotation)
 
     println("-------------------------")
+    println()
+
+    println("-------------------------")
+    println("Input & Output Section:")
+
+    val employeeId : Int = 19
+    println("The employee ID is $employeeId.")
+
+    var employeeAge : Int = 25
+    println("The employee age is $employeeAge.")
+
+    // use readLine() to get user input
+    // returns a string
+    // "!!" indicates that the value cannot be null
+    print("Enter your name: ")
+    val employeeName = readLine();
+    println("Welcome to the company, $employeeName!")
+
+    // Reading two numbers and outputting the sum
+    print("Enter any number: ")
+    var firstUserNumber = readLine()!!
+    var firstNumericValue = firstUserNumber.toInt()
+
+    print("Enter a second number: ")
+    var secondUserNumber = readLine()!!
+    var secondNumericValue = secondUserNumber.toInt()
+    println("The sum of your two numbers is ${firstNumericValue + secondNumericValue}")
+
+
+    // Using a Scanner Object to read input
+    val s = Scanner(System.`in`)
+
+    print("Enter your pets name: ")
+    var petName = s.next()
+    println("Your pets name is $petName.")
+
+    print("Enter your pets age: ")
+    var petAge = s.nextInt()
+    println("Your pets age is $petAge.")
+
+    println("-------------------------")
+    println()
+
 }
